@@ -27,7 +27,18 @@ Para utilizá-lo basta rodar o código: `poetry run blue main.py` - {nome do arq
 ---
 ### Isort
 `poetry add isort`  
-Serve para ordernar os *import* das bibliotecas.
+Serve para ordernar os *import* das bibliotecas.  
+É necessário adicionar ao arquivo 'pyproject.toml' o seguinte comando:  
+```
+[tool.isort]
+profile = 'black'
+```
+Dessa forma está mostrando a biblioteca Isort para utilizar como padrão a biblioteca Black.
+
+---
+## Bandit
+`poetry add bandit`  
+Biblioteca de cibersegurança.
 
 ---
 
@@ -40,3 +51,4 @@ poetry run pre-commit install
 git add .pre-commit-config.yaml
 git commit -m 'commit inicial'
 ```
+No primeiro *commit* irá demorar um pouco, pois está instalando arquivos dentro da pasta '.git', após isso todos os *commit's* passarão por essa 'varredura'!

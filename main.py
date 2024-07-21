@@ -7,6 +7,7 @@ nome_valido = False
 salario_valido = False
 bonus_valido = False
 
+
 while not nome_valido:
     try:
         nome = input("Digite seu nome: ")
@@ -23,6 +24,7 @@ while not nome_valido:
     except ValueError as e:
         print(e)
 
+
 # Solicita ao usuário que digite o valor do seu salário e converte para float
 
 try:
@@ -38,6 +40,8 @@ try:
     bonus = float(input("Digite o valor do bônus recebido: "))
     if bonus < 0:
         print("Por favor, digite um valor positivo para o bônus.")
+
+
 except ValueError:
     print("Entrada inválida para o bônus. Por favor, digite um número.")
     exit()

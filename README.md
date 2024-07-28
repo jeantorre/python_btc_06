@@ -47,6 +47,7 @@ Biblioteca de cibersegurança.
 Para garantir que todo o código seja revisado antes de ser *commitado*, é possível configurar o pre-commit que ele irá rodar um conjunto de condições e garantir o padrão.  
 Para isso é preciso ciar o arquivo '.pre-commit-config.yaml' com as condições necessárias a serem seguidas. Para saber mais acesse: [pre-commit hooks](https://pre-commit.com/hooks.html).
 ```python
+poetry add pre-commit
 poetry run pre-commit install
 git add .pre-commit-config.yaml
 git commit -m 'commit inicial'

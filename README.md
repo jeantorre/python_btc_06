@@ -1,5 +1,8 @@
 # python_btc_06
 ## Iniciar
+`pip install pipx`
+`pipx install poetry`
+`pyenv install 3.12.4`
 `pyenv local 3.12.4`  
 `poetry init`  
 `poetry env use 3.12.4`  
